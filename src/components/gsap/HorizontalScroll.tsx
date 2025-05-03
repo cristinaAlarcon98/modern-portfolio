@@ -9,14 +9,14 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 function HorizontalScroll() {
   const projects = [
     {
-      name: "Mandelbrot Set With C",
+      name: "Mandelbrot set With C",
       url: "https://github.com/cristinaAlarcon98/fractol",
       src: "/images/fractol.png",
     },
     {
       name: "Minimalist Twitter",
       url: "https://github.com/cristinaAlarcon98/MinimalistTwitter",
-      src: "/images/storyspark.png",
+      src: "/images/twitter.png",
     },
     {
       name: "KamyLikamile",
@@ -24,12 +24,12 @@ function HorizontalScroll() {
       src: "/images/kamilikamile.png",
     },
     {
-      name: "Bubble Shooter Game with Assembly",
+      name: "Bubble Shooter with Assembly",
       url: "https://github.com/cristinaAlarcon98/Bubble-Shooter-Assembly-x86/blob/main/BUBLE8.X68",
       src: "/images/bubbleshooter.png",
     },
     {
-      name: "A C library with basic functions made from scratch",
+      name: "A C library made from scratch",
       url: "https://github.com/cristinaAlarcon98/libft",
       src: "/images/libft.png",
     },
@@ -41,18 +41,18 @@ function HorizontalScroll() {
     {
       name: "get_next_line function made with C",
       url: "https://github.com/cristinaAlarcon98/get_next_line_v2",
-      src: "/images/42london.png",
+      src: "/images/getnextline.png",
     },
   ];
 
   useGSAP(() => {
     gsap.to(".slides", {
-      x: window.innerWidth < 768 ? "-70vw" : "-60vw",
+      x: "-3300px",
       scrollTrigger: {
         trigger: ".slides-container",
         start: "center center",
         end: "bottom top",
-        scrub: 1,
+        scrub: 2,
         pin: true,
         pinReparent: true,
         markers: true,
@@ -62,16 +62,21 @@ function HorizontalScroll() {
 
   return (
     <div className="flex md:flex-row flex-wrap">
-      <div className="square flex-col md:w-12/12 ">
-        <div className="slides-container w-[2000px]">
-          {" "}
+      <div className="square flex-col md:w-12/12">
+        <div className="slides-container w-[5500px] overflow-hidden">
           <div className="slides flex space-x-12 ml-40">
-            {" "}
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="relative w-[900px] h-[350px] cursor-pointer transform transition-transform duration-300 hover:scale-105" // Reduced size
+                className="relative w-[600px] h-[350px] cursor-pointer transform transition-transform duration-300 hover:scale-105"
                 onClick={() => window.open(project.url, "_blank")}
+                role="link"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    window.open(project.url, "_blank");
+                  }
+                }}
               >
                 <img
                   src={project.src}
