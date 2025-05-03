@@ -8,12 +8,13 @@ const SectionTypewriter = () => {
     <section className="h-[110vh] w-full flex justify-center items-center pb-80">
       <div ref={typewriterRef}>
         <TypeWriterText
-          words={[
-            "WELCOME TO MY SITE",
-            "I CODE. I CREATE. I EXPLORE.",
-            "HERE, TECH MEETS ART.",
-            "ENJOY THE JOURNEY",
-          ]}
+        words={[
+          "WELCOME TO MY LAB",
+          "I CODE. I BUILD. I EXPERIMENT.",
+          "A SPACE FOR TECH DISCOVERY.",
+          "ENJOY THE JOURNEY",
+        ]}
+        
           speed={0.8}
           limits={{ start: 300, end: 450 }}
         />

@@ -9,38 +9,52 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 function HorizontalScroll() {
   const projects = [
     {
-      name: "My Digital Art",
-      url: "https://www.google.com",
+      name: "Mandelbrot Set With C",
+      url: "https://github.com/cristinaAlarcon98/fractol",
       src: "/images/fractol.png",
     },
     {
-      name: "KamyLikamile",
-      url: "https://www.google.com",
-      src: "/images/kamilikamile.png",
-    },
-    {
-      name: "StorySpark",
-      url: "https://www.google.com",
+      name: "Minimalist Twitter",
+      url: "https://github.com/cristinaAlarcon98/MinimalistTwitter",
       src: "/images/storyspark.png",
     },
     {
-      name: "42London",
-      url: "https://www.google.com",
+      name: "KamyLikamile",
+      url: "https://kamylikamile-test.netlify.app",
+      src: "/images/kamilikamile.png",
+    },
+    {
+      name: "Bubble Shooter Game with Assembly",
+      url: "https://github.com/cristinaAlarcon98/Bubble-Shooter-Assembly-x86/blob/main/BUBLE8.X68",
+      src: "/images/bubbleshooter.png",
+    },
+    {
+      name: "A C library with basic functions made from scratch",
+      url: "https://github.com/cristinaAlarcon98/libft",
+      src: "/images/libft.png",
+    },
+    {
+      name: "printf function made with C",
+      url: "https://github.com/cristinaAlarcon98/ft_printf",
+      src: "/images/printf.png",
+    },
+    {
+      name: "get_next_line function made with C",
+      url: "https://github.com/cristinaAlarcon98/get_next_line_v2",
       src: "/images/42london.png",
     },
   ];
 
   useGSAP(() => {
-    // Animation for slides
     gsap.to(".slides", {
       x: window.innerWidth < 768 ? "-70vw" : "-60vw",
       scrollTrigger: {
         trigger: ".slides-container",
         start: "center center",
-        end: "bottom top", // Adjust end value to ensure proper unpinning
+        end: "bottom top",
         scrub: 1,
         pin: true,
-        pinReparent: true, // Use pinReparent to manage pinning behavior
+        pinReparent: true,
         markers: true,
       },
     });

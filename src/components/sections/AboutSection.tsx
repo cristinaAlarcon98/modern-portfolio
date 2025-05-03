@@ -24,22 +24,25 @@ const SectionFadeInText = () => {
     <>
       While I enjoy exploring different areas of software development, my heart
       is in <span style={{ color: "#FF5733" }}>frontend</span> — where{" "}
-      <span style={{ color: "#00BFA6" }}>creativity</span> and{" "}
-      <span style={{ color: "#3498DB" }}>functionality</span> come together. I
-      love building modern, interactive features and expressing ideas through{" "}
-      <span style={{ color: "#00CFFF" }}>digital art</span>.
-      <br />
+      <span style={{ color: "#00BFA6" }}>creativity</span> meets{" "}
+      <span style={{ color: "#3498DB" }}>functionality</span>. I
+      love building modern, interactive features that improve user experiences,
+      and I’m currently diving deeper into{" "}
+      <span style={{ color: "#9B59B6" }}>AI technologies</span> to expand what’s
+      possible in web development. <br />
     </>
   );
+  
   const fourthPharagraph = (
     <>
-      This site is my personal space to share the projects I'm working on, as I
-      continue learning and exploring the world of{" "}
-      <span style={{ color: "#FFC300" }}>frontend</span> and{" "}
-      <span style={{ color: "#00BFA6" }}>creative coding</span>.
-      <br />
+      This site is my personal space to share the projects I'm working on and document my journey as I continue learning, building, and experimenting with{" "}
+      <span style={{ color: "#FFC300" }}>frontend</span>,{" "}
+      <span style={{ color: "#00BFA6" }}>creative coding</span>, and{" "}
+      <span style={{ color: "#9B59B6" }}>AI</span>. It’s also a place where I combine technology with personal expression — sometimes through{" "}
+      <span style={{ color: "#00CFFF" }}>digital art</span>, and always through code. <br />
     </>
   );
+  
 
   return (
     <section className="bg-primary-foreground h-[120vh] w-full flex justify-center flex-direction-col">
