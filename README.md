@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My New Portfolio - Next.js & GSAP Experiments
 
-## Getting Started
+Welcome to **My New Portfolio**, a personal web project built to showcase my work and experiment with advanced web animations.  
+This site serves as a creative playground to explore **GSAP** motion effects, **scroll-based interactions**, and **Next.js** development.
 
-First, run the development server:
+## Description
+
+This portfolio was developed to present my professional projects and creative experiments.  
+It also serves as a technical lab where I test new frontend technologies, focusing on **animation performance**, **smooth scroll experiences**, and **responsive design** using **Next.js** and **GSAP**.
+
+The website is deployed and publicly accessible at:  
+👉 [new-portfolio-cristina.netlify.app](https://new-portfolio-cristina.netlify.app)
+
+## Features
+
+- Built with **Next.js** for performance and scalability.  
+- **GSAP** for complex motion and scroll-triggered animations.  
+- Responsive layout for desktop and mobile.  
+- Deployed via **Netlify**.  
+- Modular components structure following best React practices.
+
+## Usage
+
+Clone the repository and install dependencies to run it locally.
 
 ```bash
+git clone https://github.com/cristinaAlarcon98/myNewPortfolio.git
+cd myNewPortfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Learning Outcomes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Through this project, I practiced:
+- Integrating **GSAP** animations in a **Next.js** environment.  
+- Creating smooth scrolling and scroll-based effects.  
+- Structuring reusable React components for portfolio pages.  
+- Deploying and maintaining a project on **Netlify**.
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+Developed by **Cristina Alarcón**  
+[cristinaalarcon.com](https://cristinaalarcon.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
