@@ -40,8 +40,3 @@ Through this project, I practiced:
 - Structuring reusable React components for portfolio pages.  
 - Deploying and maintaining a project on **Netlify**.
 
-## Author
-
-Developed by **Cristina Alarcón**  
-[cristinaalarcon.com](https://cristinaalarcon.com)
-
